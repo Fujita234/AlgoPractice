@@ -2,7 +2,7 @@
 const maximumProfit = (list: number[]) => {
   let max: number = 0;
   let min: number = 9999999;
-  let i = 0;
+  let i = 0;s
 
   for (i = 0; i < list.length - 1; i++) {
     if (max < list[i]) {
@@ -15,7 +15,7 @@ const maximumProfit = (list: number[]) => {
     }
   }
 
-if (max < list[i]) {
+if (max < list[i]) {[]
     max = list[i];
 }
 console.log(max - min);
