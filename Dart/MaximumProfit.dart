@@ -17,8 +17,7 @@ void main() {
     if (max < list[i]) {
       max = list[i];
     }
-    print(max);
-    print(min);
+    print(max - min);
   }
 
   maximumProfit([6, 5, 3, 1, 3, 4, 3]);
