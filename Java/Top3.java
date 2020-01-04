@@ -6,6 +6,9 @@ import java.util.Collections;
 import java.util.stream.Stream;
 import java.util.stream.Collectors;
 
+/**
+ * 配列の中でTOP3の値を取得する
+ */
 public class Top3 {
   public static void main(String args[]) {
     List<Integer> lists = List.of(25, 36, 4, 55, 71, 18, 0, 71, 89, 65);

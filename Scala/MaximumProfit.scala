@@ -3,6 +3,10 @@ object MaximumProfit extends App{
     maximumProfit(List(6, 5, 3, 1, 3, 4, 3));
     maximumProfit(List(3, 4, 3, 2));
     
+
+   /**
+    * Listの最大利益を求めるメソッド
+    */
     def maximumProfit(list: List[Int]) = {
         var max = 0;
         var min = 99999;

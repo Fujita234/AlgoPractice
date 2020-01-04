@@ -2,6 +2,9 @@ object Top3 extends App{
     val list1: List[Int] = List(25, 36, 4, 55, 71, 18, 0, 71, 89, 65);
     top3(list);
 
+    /**
+     * 配列の中でTOP3の値を取得する
+     */
     def top3(list: List[Int]) = {
         var editedList: List[Int] = list;
         var maxValue = 0;
