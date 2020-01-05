@@ -1,4 +1,8 @@
 void main() {
+
+  /**
+   * Listの最大利益を求めるメソッド
+   */
   void maximumProfit(List<int> list) {
     var max = 0;
     var min = 9999999;
