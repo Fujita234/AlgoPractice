@@ -1,3 +1,6 @@
+/**
+ * Listの最大利益を求める関数
+ */
 function MaximumProfit(list) {
   let min = 999999;
   let max = 0;
