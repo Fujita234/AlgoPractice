@@ -1,5 +1,6 @@
 /**
  * 挿入ソート
+ * @param list リスト
  */
 function insertionSort(list) {
   for (var i = 0; i < list.length; i++) {

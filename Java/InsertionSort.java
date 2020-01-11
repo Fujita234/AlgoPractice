@@ -16,6 +16,7 @@ public class InsertionSort {
     
     /**
      * 挿入ソートを行うメソッド
+     * @param list リスト
      */
     public static List<Integer> insertionSort(List<Integer> list, int n) {
         for (int i = 1; i < n; i++) {

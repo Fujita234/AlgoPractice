@@ -2,6 +2,7 @@ void main() {
   
   /**
    * 挿入ソート
+   * @param list リスト
    */
   List<int> insertionSort(List<int> list) {
     for (var i = 0; i < list.length; i++) {

@@ -6,6 +6,7 @@ object Main extends App{
     
     /**
      * 挿入ソートを実装
+     * @param list リスト
      **/
     def insertionSort(list: ListBuffer[Int]):ListBuffer[Int] = {
         for (i <- 0 until list.length) {
