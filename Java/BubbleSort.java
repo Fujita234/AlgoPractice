@@ -2,6 +2,9 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
+
+        print(insertionSort([5, 2, 4, 6, 1, 3]));
+        
         /**
          * バブルソートの実装
          */
