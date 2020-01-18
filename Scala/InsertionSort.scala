@@ -1,6 +1,6 @@
 import scala.collection.mutable.ListBuffer
 
-object Main extends App{
+object InsertionSort extends App{
 
     println(insertionSort(ListBuffer(5, 2, 4, 6, 1, 3)));
     

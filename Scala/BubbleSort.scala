@@ -1,7 +1,11 @@
 import scala.collection.mutable.ListBuffer
 
 object BubbleSort extends App{
-    // Your code here!
+    
+    /**
+     * バブルソート
+     * @param list リスト
+     * /
     def bubbleSort(list: ListBuffer[Int]):ListBuffer[Int] = {
         var n = list.length;
         for (i <- 0 until n; j <- n - 1 to i + 1 by -1) {
