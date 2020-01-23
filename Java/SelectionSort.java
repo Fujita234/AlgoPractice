@@ -19,11 +19,12 @@ public class SelectionSort {
             int minj = i;
             for (int j = i; j < list.size(); j++) {
                 if (list.get(minj) > list.get(j)) {
-                    int beSortedValue = list.get(j);
-                    list.set(j, list.get(minj));                    
-                    list.set(minj, beSortedValue);
+                  minj = j;
                 }
             }
+            int beSortedValue = list.get(i);
+            list.set(i, list.get(minj));
+            list.set(minj, beSortedValue);
         }
         return list;
     } 

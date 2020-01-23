@@ -7,11 +7,12 @@ function selectionSort(list) {
       let minj = i;
       for (j = i; j < list.length; j++) {
           if (list[j] < list[minj]) {
-              let beSortedValue = list[j];
-              list[j] = list[minj];
-              list[minj] = beSortedValue;
+              minj = j;
           }
       }
+      let beSortedValue = list[i];
+      list[i] = list[minj];
+      list[minj] = beSortedValue;
   }
   return list;
 }

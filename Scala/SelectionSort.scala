@@ -13,11 +13,12 @@ object SelectionSort extends App{
             var minj = i;
             for (j <- i until list.length) {
                 if (list.apply(minj) > list.apply(j)) {
-                    var beSortedValue = list.apply(j);
-                    list.update(j, list.apply(minj));
-                    list.update(minj, beSortedValue);
+                    minj = j;
                 }
             }
+            var beSortedValue = list.apply(i);
+            list.update(i, list.apply(minj));
+            list.update(minj, beSortedValue);
         }
         return list;
     }

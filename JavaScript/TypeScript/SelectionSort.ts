@@ -10,11 +10,12 @@ const SelectionSort = (list: number[]) => {
       let minj = i;
       for (j = minj; j < n; j++) {
           if (list[minj] > list[j]) {
-              let beSortedValue = list[j];
-              list[j] = list[minj];
-              list[minj] = beSortedValue;
+              minj = j;
           }
       }
+      let beSortedValue = list[i];
+      list[i] = list[minj];
+      list[minj] = beSortedValue;
   }
   return list;
 }

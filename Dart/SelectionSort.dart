@@ -10,11 +10,12 @@ void main() {
       var minj = i;
       for (var j = minj; j < n; j++) {
         if (list[minj] > list[j]) {
-          var beSortedValue = list[j];
-          list[j] = list[minj];
-          list[minj] = beSortedValue;
+          minj = j;
         }
       }
+      var beSortedValue = list[i];
+      list[i] = list[minj];
+      list[minj] = beSortedValue;
     }
     return list;
   }
