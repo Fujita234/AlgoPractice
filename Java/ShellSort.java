@@ -13,7 +13,7 @@ public class Main {
         list.add(1);
         list.add(3);
         list.add(7);
-        d
+        
         System.out.println(shellSort(list));
     }
     
