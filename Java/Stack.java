@@ -28,13 +28,16 @@ public class Main {
         }
     }
     
+    /**
+     * pushを実装
+     */
     public static List<Integer> push(List<Integer> list, Integer addValue) {
         list.add(addValue);
         return list;
     }
     
     /**
-     * 
+     * popを実装
      */
     public static List<Integer> pop(List<Integer> list) {
         Integer n = list.length - 1;
