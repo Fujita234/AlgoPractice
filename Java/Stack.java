@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("XXXXXXXX");
-        
+        System.out.println(stack());
+        System.out.println(pop());
     }
     
     public static List<Integer> stack() {
