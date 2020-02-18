@@ -1,5 +1,8 @@
 import java.util.*;
 
+/**
+ * Stackの実装
+ */
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println(stack());
