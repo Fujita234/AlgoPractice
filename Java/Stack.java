@@ -5,42 +5,65 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println(stack());
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.add("+");
+        list.add("3");
+        list.add("4");
+        list.add("-");
+        list.add("*");
+
+        System.out.println(stack(list));
         System.out.println(pop());
     }
-    
-    public static List<Integer> stack() {
-        Scanner scan = new Scanner(System.in);
-        String str = scan.next();
-        int pop1 = 0;
-        int pop2 = 0;
-        if (str.epuals("+")) {
-            pop1 = pop();
-            pop2 = pop();
-            push(pop1 + pop2);
-        } else if (str.epuals("-")) {
-            pop2 = pop();
-            pop1 = pop();
-            push(pop1 - pop2);
-        } else if (str.epuals("*")) {
-            pop1 = pop();
-            pop2 = pop();
-            push(pop1 * pop2);
-        } else {
-            
+    /**
+     * Stackを実装します。
+     * @param lists 入力された値のList
+     * @return Stackリスト
+     */
+    public static List<Integer> stack(List<String> lists) {
+        List<Integer> stackList = new ArrayList<>();
+        for (String list : lists) {
+            try {
+                Integer num = Integer.parseInt(list);
+                push(stackList, num);
+            } catch (NumberFormatException e) {
+                if (list.equals("+")) {
+                    pop1 = pop(stackList);
+                    pop2 = pop(stackList);
+                    push(list, pop1 + pop2);
+                } else if (list.equals("-")) {
+                    pop2 = pop(stackList);
+                    pop1 = pop(stackList);
+                    push(list, pop1 - pop2);
+                } else if (list.equals("*")) {
+                    pop1 = pop(stackList);
+                    pop2 = pop(stackList);
+                    push(list, pop1 * pop2);
+                } else {
+                    System.out.println(e);
+                }
+            }
         }
+        return stackList;
     }
     
     /**
-     * pushを実装
+     * 数字をStackリストに入れます。
+     * @param list stackリスト
+     * @param num stackに入れる数字
+     * @return 数字が入ったリスト
      */
-    public static List<Integer> push(List<Integer> list, Integer addValue) {
-        list.add(addValue);
+    public static List<Integer> push(List<Integer> list, Integer num) {
+        list.add(num);
         return list;
     }
     
     /**
-     * popを実装
+     * Stackリストから数字を取り出します。
+     * @param list Stackリスト
+     * @return 取り出された数字
      */
     public static List<Integer> pop(List<Integer> list) {
         Integer n = list.length - 1;
