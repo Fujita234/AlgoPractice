@@ -1,9 +1,9 @@
 /**
- * stackを実装
+ * stackを実装s
  * @param {リスト} lists 
  */
 function stack(lists) {
-  let stackList = [];
+  let stackList = []
   for (let i = 0; i < lists.length; i++) {
       let num = Number(lists[i]);
       if (isNaN(num)) {
